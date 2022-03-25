@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    
+width: 100%;
+background-color: rgb(23, 26, 23);;
+height: 150px;
+z-index: 2;position:fixed;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ 
+}
+nav ul li {
+   margin-top: 50px;
+   list-style: none;
+  
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 195, 255);
+    font-size: 28px;
+    transition: 1s;
+
+}
+nav ul li a:hover{
+  color: red;
+
+}
+ svg{
+  display: none;
+ width: 150px;
+ height: 70px;
+ cursor: pointer;
+    
+}
+.main-block{
+  width: 100%;
+  height: 900px;
+  background-color: #000;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+position: relative;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.main-block h1{
+margin-left: 20px;
+font-size: 50px;
+
+white-space:nowrap;
+overflow:hidden;
+animation:typing 4s steps(22,end) forwards,
+          blink 1s infinite;
+
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.button-block a {
+    text-decoration: none;
+    width: 225px;
+    height: 55px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #20c20e;
+    font-size: 28px;
+    border: 1px solid #20c20e;
+    transition: 1s;
+    position: absolute;
+    right: 250px;
+}
+.button-block a:hover{
+    color: #fff;
+    background-color: #20c20e ;
+}
+
+.lock{
+  color: #fff;
+  font-size: 26px;
+  width: 20px;
+  position: absolute;
+  right: 0;
+  display: none;
+  top: 0;
+}
+
+    
+
+
+  #h1{
+      color: greenyellow;
+  }
+  @keyframes typing {
+    0% { max-width:0% }
+    100% { max-width:100% }
+  }
+  @keyframes blink {
+    0%,90% {
+      border-right:1px solid transparent;
+    }
+    50% {
+      border-right:2px solid #222;
+    }
+  }
+
+  .main-skils{
+ width: 100%;
+ background-color: #222;
+
+
+  }
+.skils h1{
+  font-size: 50px;
+  font-family:fantasy;
+  color: #20c20e;
+  margin-left: 100px;
+  padding-top: 30px;
+}
+  .skilt-title{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(0, 255, 0);
+ 
+  }
+  
+  .skils-item{
+    width: 500px;
+    height: 30px;
+  
+
+  border: 2px solid green;
+  }
+  .skils-item-color{
+    background: green;
+    width: 95%;
+    height: 100%;
+animation-name: loading;
+animation-duration: 3s;
+animation-fill-mode: forwards;
+  }
+  
+  @keyframes loading {
+
+    10%{
+      width: 10%;
+    }
+   
+    to{
+      max-width: 95%;
+    }
+    
+    
+  }
+  .main-education{
+    margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+  .education-title h1{
+  color: #20c20e;
+  font-size: 38px;
+  }
+  .education-title p{
+    color: #20c20e;
+    font-size: 24px;
+   
+  }
+  
+
+  .contact-title{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    font-size: 30px;
+    color: #20c20e;
+  }
+.contact-data{
+  display: flex;
+ 
+  justify-content:center;
+  align-items: center;
+ 
+  color: #20c20e;
+}
+.phone{
+  display: flex;
+  flex-direction: column;
+  color: #20c20e;
+  justify-content:center;
+  align-items: center;
+
+ 
+}
+.phone p{
+   font-size: 28px;
+}
+footer{
+  max-height: 400px;
+}
+
+footer{
+  width: 100%;
+ height: 500px;
+ background-color: #000;
+}
+.footer-block{
+  width: 100%;
+
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.facebook  img ,.git img,.linkedin img{
+  max-width: 150px;
+  max-height: 50px;
+  margin-top: 150px;
+ 
+}
+.telegram img{
+  max-width: 150px;
+  max-height: 50px;
+  margin-left: 5px;
+  margin-top: 150px;
+}
+.footer-title{
+  color: #20c20e;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 28px;
+}
+@media screen and (max-width: 1070px) {
+  .main-block{
+
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 1fr;
+  }
+  .main-block h1{
+    margin-top: 50px;
+  }
+  .button-block a {
+    top: 500px;
+    left: 50px;
+  }
+  .footer-title{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  svg{
+      display: block;
+      position: absolute;
+   top: 10px;
+   
+  }
+  .lock{
+    display: block;
+  }
+  .main-block h1{
+    font-size: 35px;
+  }
+  nav ul {
+   position: absolute;
+     left: 8px;
+       flex-direction: column;
+       display: none;
+       max-width: 20%;
+       background: #000;
+ 
+  }
+  .footer-title{
+    font-size: 18px;
+  }
+
+  
+}
+@media screen and (max-width: 430px) {
+ 
+  .main-block h1{
+font-size: 25px;
+  }
+
+}
