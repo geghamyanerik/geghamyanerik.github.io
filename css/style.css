@@ -345,6 +345,9 @@ right: 40px;
 }
 
 @media screen and (max-width: 840px) {
+   .header-section .about-div  {
+  margin-top: 100px;
+  }
   .header-section .header-block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
